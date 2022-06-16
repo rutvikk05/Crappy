@@ -1,25 +1,18 @@
-const pickupLine = document.getElementById('PLine');
-const pickupLineButton = document.getElementById('PLineButton');
-
-pickupLineButton.addEventListener('click', () => generatePickupLine());
-
-generatePickupLine();
-
-
-
-
+const pickupLine = document.getElementById('PLine')
+const pickupLineButton = document.getElementById('pLineBtn')
+pickupLineButton.addEventListener('click', generatePickUpLine)
+const url =
+  'https://twitter-scraper2.p.rapidapi.com/api/v2/search?allOfTheseWords=Hey%20girl%20Cuz&lang=en&fromTheseAccounts=%40rutvikk05&fromDate=2022-01-01&searchMode=live'
 const options = {
-    method: 'GET',
-	headers: {
-        'X-RapidAPI-Key': '9471d7bc0fmsh7dbb39fb9f8f612p1029eejsn01706ecf6dff',
-		'X-RapidAPI-Host': 'twitter-scraper2.p.rapidapi.com'
-	}
-};
+  method: 'GET',
+  headers: {
+    'X-RapidAPI-Key': '9471d7bc0fmsh7dbb39fb9f8f612p1029eejsn01706ecf6dff',
+    'X-RapidAPI-Host': 'twitter-scraper2.p.rapidapi.com',
+  },
+}
 
-fetch('https://twitter-scraper2.p.rapidapi.com/api/v2/search?allOfTheseWords=Hey%20girl%20Cuz&lang=en&fromTheseAccounts=%40rutvikk05&fromDate=2022-01-01&searchMode=live', options)
-	.then(response => response.json())
-	.then(response => {
-        console.log(response);
-
-    })
-	.catch(err => console.error(err));
+async function generatePickUpLine() {
+  const response = await fetch(url, options)
+  const data = await response.json()
+  console.log(data)
+}
