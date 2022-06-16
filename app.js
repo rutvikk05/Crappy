@@ -1,4 +1,4 @@
-const pickupLine = document.getElementById('PLine')
+const pickupLine = document.getElementById('pLine')
 const pickupLineButton = document.getElementById('pLineBtn')
 pickupLineButton.addEventListener('click', generatePickUpLine)
 const url =
