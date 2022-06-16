@@ -5,11 +5,11 @@ pickupLineButton.addEventListener('click', getRandomPickUpLine)
 const spinnerContainer = document.querySelector('.spinner-container')
 
 const url =
-  'https://twitter-scraper2.p.rapidapi.com/api/v2/search?allOfTheseWords=Hey%20girl&lang=en&fromTheseAccounts=%40rutvikk05&searchMode=live'
+  'https://twitter-scraper2.p.rapidapi.com/api/v2/search?allOfTheseWords=Hey%20girl%20Cuz&lang=en&fromTheseAccounts=%40Rutvikk05&fromDate=2022-01-01&toDate=2050-06-16&searchMode=live'
 const options = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Key': 'cff20a77d0msh899191bba8e5c6ap101fcajsnc53377c0c29b',
+    'X-RapidAPI-Key':  '7d90529816msh8f412bface9f871p1cfe14jsnceb97b27e199',
     'X-RapidAPI-Host': 'twitter-scraper2.p.rapidapi.com',
   },
 }
