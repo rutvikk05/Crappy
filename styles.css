@@ -33,7 +33,7 @@ h3{
  letter-spacing: 2px;   
 }
 
-.pLine{
+#pLine{
     font-size: 30px;
     letter-spacing: 1px;
     margin: 50px auto;
@@ -42,7 +42,7 @@ h3{
     
 }
 
-.pLineBtn {
+#pLineBtn {
     background-color: #9f68e0;
     color: white;
     cursor: pointer;
