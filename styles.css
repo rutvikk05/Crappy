@@ -49,4 +49,15 @@ h3 {
   font-size: 16px;
   font-weight: bold;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s ease;
+}
+#pLineBtn:hover {
+  background-color: hsl(268, 66%, 54%);
+}
+#pLineBtn:focus {
+  outline: 3px solid hsl(268, 74%, 44%);
+  outline-offset: 3px;
+}
+#pLineBtn:active {
+  transform: scale(0.98);
 }

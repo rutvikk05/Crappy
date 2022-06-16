@@ -2,7 +2,7 @@ const pickupLine = document.getElementById('PLine')
 const pickupLineButton = document.getElementById('pLineBtn')
 pickupLineButton.addEventListener('click', generatePickUpLine)
 const url =
-  'https://twitter-scraper2.p.rapidapi.com/api/v2/search?allOfTheseWords=Hey%20girl%20Cuz&lang=en&fromTheseAccounts=%40rutvikk05&fromDate=2022-01-01&searchMode=live'
+  'https://twitter-scraper2.p.rapidapi.com/api/v2/search?allOfTheseWords=Hey%20girl&lang=en&fromTheseAccounts=%40rutvikk05&fromDate=2022-01-01&searchMode=live'
 const options = {
   method: 'GET',
   headers: {
@@ -12,7 +12,11 @@ const options = {
 }
 
 async function generatePickUpLine() {
-  const response = await fetch(url, options)
-  const data = await response.json()
-  console.log(data)
+  try {
+    const response = await fetch(url, options)
+    const { data } = await response.json()
+    console.log(data)
+  } catch (error) {
+    console.log(`There was an error fetching data`)
+  }
 }
