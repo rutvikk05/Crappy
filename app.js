@@ -5,7 +5,7 @@ pickupLineButton.addEventListener('click', getRandomPickUpLine)
 const spinnerContainer = document.querySelector('.spinner-container')
 
 const url =
-  'https://twitter-scraper2.p.rapidapi.com/api/v2/search?allOfTheseWords=Hey%20girl%20Cuz&lang=en&fromTheseAccounts=%40Rutvikk05&fromDate=2022-01-01&toDate=2050-06-16&searchMode=live'
+"https://twitter-scraper2.p.rapidapi.com/api/v2/search?allOfTheseWords=Hey%20girl%20Cuz&lang=en&fromTheseAccounts=%40rutvikk05&fromDate=2022-01-01&toDate=2024-07-05&searchMode=live"
 const options = {
   method: 'GET',
   headers: {
