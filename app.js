@@ -9,7 +9,7 @@ const url =
 const options = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Key':  '7d90529816msh8f412bface9f871p1cfe14jsnceb97b27e199',
+    'X-RapidAPI-Key':  'de65a4c339msh9ac918ad4934a43p1475ebjsnc6780b4a2b69',
     'X-RapidAPI-Host': 'twitter-scraper2.p.rapidapi.com',
   },
 }
